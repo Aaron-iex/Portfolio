@@ -71,7 +71,7 @@ const Hero = () => {
           className="text-xl md:text-2xl text-nothing-gray-300 mb-8 h-8"
         >
           <TypeWriter
-            words={['ECE Student', 'Firmware Developer', 'DRONE ENTHUSIAST', 'AI/ML on the Edge', 'Software Developer', 'Event-Management']}
+            words={['ECE Student', 'Firmware Developer', 'Drone enthusiasts', 'AI/ML on the Edge', 'Software Developer', 'Event-Management']}
             className="font-nothing"
           />
         </motion.div>
