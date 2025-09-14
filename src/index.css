@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@font-face {
+  font-family: 'NDot';
+  src: url('/fonts/ndot-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Nothing-inspired fonts */
+
+/* Base styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+     font-size: 97.5%; 
+  }
+  body {
+    @apply bg-nothing-black text-nothing-white font-sans antialiased;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-nothing-gray-900;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-nothing-gray-600 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-nothing-gray-500;
+  }
+}
+
+/* Component layer for reusable styles */
+@layer components {
+  .btn-primary {
+    @apply px-6 py-3 bg-nothing-white text-nothing-black font-medium rounded-lg
+           hover:bg-nothing-gray-200 transition-all duration-300
+           transform hover:scale-105 hover:shadow-lg;
+  }
+  .btn-outline {
+    @apply px-6 py-3 border-2 border-nothing-white text-nothing-white font-medium
+           rounded-lg hover:bg-nothing-white hover:text-nothing-black
+           transition-all duration-300 transform hover:scale-105;
+  }
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 py-16 lg:py-24;
+  }
+  .container-max {
+    @apply max-w-7xl mx-auto;
+  }
+  .nothing-gradient {
+    background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.05) 100%);
+  }
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
+
+/* Utility classes */
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(90deg, #ffffff 0%, #a3a3a3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .dot-pattern {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
