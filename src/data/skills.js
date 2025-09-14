@@ -7,7 +7,7 @@ export const skills = [
   },
   {
     category: "Microcontrollers",
-    items: ["STM32F103C8", "ESP32", "Arduino Uno/Nano", "TMS320F28379D" , "RASBERRY PI" , "PIXHAWK"  ]
+    items: ["STM32F103C8", "ESP32", "Arduino Uno/Nano", "TMS320F28379D" , "RASPBERRY PI" , "PIXHAWK"  ]
   },
   {
     category: "Hardware & Protocols",
