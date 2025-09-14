@@ -5,7 +5,7 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const Projects = () => {
   return (
-    <section id="about" className="section-padding glassmorphism border-y border-nothing-gray-800">
+    <section id="projects" className="section-padding glassmorphism border-y border-nothing-gray-800">
       <div className="container-max">
         <motion.div
           initial={{ opacity: 0 }}
