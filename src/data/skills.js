@@ -1,24 +1,32 @@
 // src/data/skills.js
+import { Code2, Cpu, CircuitBoard, TerminalSquare, BrainCircuit } from 'lucide-react';
 
 export const skills = [
   {
-    category: "Languages",
-    items: ["C", "C++", "Python", "JavaScript"]
+    category: "Core Languages",
+    icon: Code2,
+    items: ["Embedded C++", "C", "Python (for scripting & automation)", "Assembly (Basic)"]
   },
   {
-    category: "Microcontrollers",
-    items: ["STM32F103C8", "ESP32", "Arduino Uno/Nano", "TMS320F28379D" , "RASPBERRY PI" , "PIXHAWK"  ]
+    category: "Processors & Architectures",
+    icon: Cpu,
+    items: ["ARM Cortex-M (STM32)", "Xtensa (ESP32)", "Raspberry Pi", "TMS320F28379D", "AVR (Arduino)"]
   },
   {
-    category: "Hardware & Protocols",
-    items: [ "PCB Design (Basic)", "Schematic Capture", "TENSORFLOW", "COMMUNICATION PROTOCOLS" ,]
+    category: "Hardware & Communication",
+    icon: CircuitBoard,
+    items: ["I2C, SPI, UART, CAN Bus", "Sensor Integration", "Schematic Capture & PCB Layout", "Power Electronics"]
   },
   {
-    category: "Tools & Software",
-    items: ["STM32CubeIDE", "ARDUPILOT", "CCS" , "Proteus" , "Git", "VS Code", "Linux", "MATLAB" , "FIGMA", ]
+    category: "Development & Tooling",
+    icon: TerminalSquare,
+    items: ["Git & GitHub", "GDB & JTAG/SWD Debugging", "CMake & Makefiles", "STM32CubeIDE", "MATLAB & Simulink", "Code composer Studio"]
   },
   {
-    category: "Concepts",
-    items: ["DRONES", "RTOS", "Embedded Systems", "Signal Processing" , "Digital Signal Processing (DSP)" ,"AI/ML Development"  ]
+    category: "Key Domains & Design",
+    icon: BrainCircuit,
+    items: [
+        "RTOS & Bare-metal Development", "Firmware Architecture", "Control Systems Design", "Sensor Fusion Algorithms", 
+        "Drone Flight Dynamics & Control", "R&D Lifecycle"  ]
   }
 ];
